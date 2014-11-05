@@ -1,0 +1,143 @@
+/*general style*/
+body {
+margin:10px;
+padding:0;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:16px;
+line-height:18px;
+color:#000000;
+}
+
+p {
+margin:4px 0 6px 0;
+}
+
+h1, h2, h3, h4 {
+font-weight:bold;
+margin:10px 0 0 0;
+}
+
+h1 {
+font-size:26px;
+}
+
+h2 {
+font-size:23px;
+}
+
+h3 {
+font-size:20px;
+}
+
+h4 {
+font-size:17px;
+}
+
+table
+{
+	border-collapse: collapse;
+	padding: auto;
+	margin: left;
+}
+
+table td, tr
+{
+	border: 1px solid black;
+	padding: 5px;
+}
+
+table th
+{
+background-color: rgba(23, 106, 172, 0.57);
+}
+table tr
+{
+background-color: rgba(197, 236, 240, 0.92);
+}
+
+/* header */
+#header {
+margin:0;
+padding:5px;
+width:890px;
+height:90px;
+color:#ffffff;
+background-color:#000000;
+}
+
+#search_top {
+margin:0;
+padding:0;
+width:900;
+background-color:#454545;
+}
+
+
+/* Outer container that holds all the columns */
+#mainContainer {
+margin:0 auto;
+padding:0;
+width:900px;
+border:1px dashed #454545;
+}
+
+/*left column*/
+#columnOne {
+float:left;
+margin:0;
+padding:0 5px 10px 5px;
+width:200px;
+background-color:#cccccc;
+}
+
+#columnOne p, #columnThree p, #columnOne ul li, #columnOne ol li, #columnThree ul li, #columnThree ol li {
+font-size:13px;
+}
+
+#columnOne h2, #columnThree h2 {
+font-size:16px;
+}
+/*table div*/
+#table{
+width: 680px;
+float: left;
+}
+
+/*Footer */
+#footer {
+margin:0;
+padding:5px 5px 5px 10px;
+width:885px;
+height:20px;
+font-size:10px;
+color:#cccccc;
+background-color:#000000;
+clear:both;
+}
+
+#footer a:link, #footer a:visited {
+color:#999999;
+text-decoration:none;
+}
+
+#footer a:hover, #footer a:active {
+color:#ffffff;
+text-decoration:underline;
+}
+
+
+/* Fix so that the outer DIV will wrap around all floated DIVs within*/
+.clearfix:after {
+content: "."; 
+display: block; 
+height: 0; 
+clear: both; 
+visibility: hidden;
+}
+
+.clearfix {display: inline-table;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */

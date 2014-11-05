@@ -1,0 +1,342 @@
+/*******************************************************
+TITLE: Fixed Three-Column Layout v1.0
+DATE: 200801
+AUTHOR: The CSS Tinderbox - http://www.csstinderbox.com
+*******************************************************/
+
+/* << ----------------// General Styles //---------------->> */
+body {
+margin:10px;
+padding:0;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:16px;
+line-height:18px;
+color:#000000;
+}
+
+p {
+margin:4px 0 6px 0;
+}
+
+strong {
+font-weight:bold;
+}
+
+em {
+font-style:italic;
+}
+
+h1, h2, h3, h4 {
+font-weight:bold;
+margin:10px 0 0 0;
+}
+
+h1 {
+font-size:26px;
+}
+
+h2 {
+font-size:23px;
+}
+
+h3 {
+font-size:20px;
+}
+
+h4 {
+font-size:17px;
+}
+
+a:link, a:visited {
+color:#8282b8;
+text-decoration:underline;
+}
+
+a:hover, a:active {
+color:#abffff;
+text-decoration:none;
+}
+
+ul {
+margin:5px 0 5px 20px;
+padding:0;
+list-style-type:disc;
+}
+
+ol {
+margin:5px 0 5px 30px;
+padding:0;
+list-style-type:decimal;
+}
+
+ul li, ol li {
+margin:0 0 4px 0;
+padding:0;
+}
+
+/* << ----------------// Outer container that holds all the columns //---------------->> */
+#mainContainer {
+margin:0 auto;
+padding:0;
+width:900px;
+border:1px dashed #454545;
+}
+
+/* << ----------------// Header //---------------->> */
+#header {
+margin:0;
+padding:5px;
+width:890px;
+height:90px;
+color:#ffffff;
+background-color:#000000;
+}
+
+/* << ----------------// Horizontal navigation //---------------->> */
+#navHorizontal {
+margin:0;
+padding:0;
+width:900;
+height:30px;
+line-height:30px;
+background-color:#454545;
+}
+
+#navHorizontal ul {
+margin:0 0 0 5px;
+padding:0;
+list-style:none;
+}
+
+#navHorizontal ul li {
+margin:0 0 0 -5px;
+padding:5px 0 5px 0;
+list-style:none;
+display:inline;
+}
+
+#navHorizontal ul li a:link, #navHorizontal ul li a:visited {
+padding:5px 8px 5px 8px;
+color:#eeeeee;
+text-decoration:none;
+border-right:1px solid #999999;
+}
+
+#navHorizontal ul li a:hover, #navHorizontal ul li a:active {
+color:#454545;
+text-decoration:none;
+background-color:#cccccc;
+}
+
+/* << ----------------// Left column //---------------->> */
+#columnOne {
+float:left;
+margin:0;
+padding:0 5px 10px 5px;
+width:190px;
+background-color:#cccccc;
+}
+
+#columnOne p, #columnThree p, #columnOne ul li, #columnOne ol li, #columnThree ul li, #columnThree ol li {
+font-size:13px;
+}
+
+#columnOne h2, #columnThree h2 {
+font-size:16px;
+}
+
+/* << ----------------// Vertical navigation //---------------->> */
+#navVertical {
+margin:0 -5px 0 -5px;
+padding:0;
+width:200px;
+background-color:#454545;
+}
+
+#navVertical ul {
+margin:0 0 0 5px;
+padding:0;
+list-style:none;
+}
+
+#navVertical ul li {
+margin:0 0 0 -5px;
+padding:0;
+list-style:none;
+border-bottom:1px solid #999999;
+}
+
+#navVertical ul li a:link, #navVertical ul li a:visited {
+padding:5px 8px 5px 8px;
+color:#eeeeee;
+text-decoration:none;
+display:block;
+}
+
+#navVertical ul li a:hover, #navVertical ul li a:active {
+color:#454545;
+text-decoration:none;
+background-color:#eeeeee;
+}
+
+/* << ----------------// Middle column //---------------->> */
+#columnTwo {
+float:left;
+margin:0 auto;
+padding:0 5px 10px 5px;
+width:490px;
+background-color:#eeeeee;
+}
+
+table, td, th
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+	border:1px solid black;
+}
+th
+{
+background-color:#cccccc;
+color:black;
+}
+
+/* <<----------------// Define Button //---------------->> */
+input.button_add {
+    background-image: url(/images/buttons/add.png); /* 16px x 16px */
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;        /* make the cursor like hovering over an <a> element */
+    height: 16px;
+    padding-left: 16px;     /* make text start to the right of the image */
+    vertical-align: middle; /* align the text vertically centered */
+}
+
+/* <<--------------// Define Image Gallery // ---------------->> */
+img
+{
+opacity:1.0;
+filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+img:hover
+{
+opacity:0.4;
+filter:alpha(opacity=100); /* For IE8 and earlier */
+}
+
+div.img
+  {
+  margin:10px;
+  border:1px dashed #454545;
+  height:auto;
+  width:auto;
+  display:inline-block;
+  margin-left:26px;
+  margin-right:auto;
+  text-align:center;
+  }
+div.img img
+  {
+  display:inline;
+  margin:3px;
+  border:1px solid #ffffff;
+  }
+div.img a:hover img
+  {
+  border:1px solid #0000ff;
+  }
+div.desc
+  {
+  text-align:center;
+  font-weight:normal;
+  width:120px;
+  margin:2px;
+  }
+
+  /* <<--------------// Define Small Image Gallery // ---------------->> */
+img
+{
+opacity:1.0;
+filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+img:hover
+{
+opacity:0.4;
+filter:alpha(opacity=100); /* For IE8 and earlier */
+}
+
+div.simg
+  {
+  margin:10px;
+  border:1px dashed #454545;
+  height:auto;
+  width:auto;
+  display:inline-block;
+  margin-left:26px;
+  margin-right:auto;
+  text-align:center;
+  }
+div.simg img
+  {
+  display:inline;
+  margin:3px;
+  border:1px solid #ffffff;
+  }
+div.simg a:hover img
+  {
+  border:1px solid #0000ff;
+  }
+div.sdesc
+  {
+  text-align:center;
+  font-weight:normal;
+  width:120px;
+  margin:2px;
+  }
+  
+/* << ----------------// Right column //---------------->> */
+#columnThree {
+float:left;
+margin:0;
+padding:0 5px 10px 5px;
+width:190px;
+background-color:#cccccc;
+}
+
+/* << ----------------// Footer //---------------->> */
+#footer {
+margin:0;
+padding:5px 5px 5px 10px;
+width:885px;
+height:20px;
+font-size:10px;
+color:#cccccc;
+background-color:#000000;
+clear:both;
+}
+
+#footer a:link, #footer a:visited {
+color:#999999;
+text-decoration:none;
+}
+
+#footer a:hover, #footer a:active {
+color:#ffffff;
+text-decoration:underline;
+}
+
+/* << ----------------// Fix so that the outer DIV will wrap around all floated DIVs within //---------------->> */
+.clearfix:after {
+content: "."; 
+display: block; 
+height: 0; 
+clear: both; 
+visibility: hidden;
+}
+
+.clearfix {display: inline-table;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
